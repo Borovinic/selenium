@@ -39,7 +39,5 @@ public class CheckboxHandling {
         } else {
             System.out.println("No");
         }
-
-
     }
 }
