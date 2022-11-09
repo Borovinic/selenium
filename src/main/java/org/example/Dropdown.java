@@ -17,7 +17,6 @@ public class Dropdown {
         driver.get(url);
         WebElement oldSelect = driver.findElement(By.id("oldSelectMenu"));
 
-
         Select select = new Select(oldSelect);
 
          List <WebElement> allOldSelectOption = select.getOptions();
@@ -25,14 +24,12 @@ public class Dropdown {
             System.out.println(singleOption.getText());
         }
 
-
         select.selectByIndex(4);
         Thread.sleep(2000);
         select.selectByVisibleText("Magenta");
         Thread.sleep(2000);
         select.selectByValue("10");
         Thread.sleep(2000);
-
 
         WebElement theMultipleSelectDropdown = driver.findElement(By.id("cars"));
         Select multipleSelect = new Select(theMultipleSelectDropdown);
@@ -51,11 +48,5 @@ public class Dropdown {
         }
 
         driver.quit();
-
-
-
-
-
-
     }
 }

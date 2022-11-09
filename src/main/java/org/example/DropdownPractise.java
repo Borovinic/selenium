@@ -14,7 +14,6 @@ public class DropdownPractise {
         String url = "https://demoqa.com/automation-practice-form";
         driver.get(url);
 
-
         WebElement theNameField = driver.findElement(By.id("firstName"));
         WebElement theLastNameField = driver.findElement(By.id("lastName"));
         WebElement theEmailField = driver.findElement(By.id("userEmail"));
@@ -23,10 +22,7 @@ public class DropdownPractise {
         WebElement theHobbiesCheckbox = driver.findElement(By.xpath("//label[@for='hobbies-checkbox-2']"));
         WebElement theCurrentAddressField = driver.findElement(By.id("currentAddress-wrapper"));
         WebElement theStateDropdown = driver.findElement(By.id("state"));
-
         WebElement theCityDropdown = driver.findElement(By.id("city"));
-
-
 
         theNameField.click();
         theNameField.sendKeys("Sonja");
@@ -43,13 +39,5 @@ public class DropdownPractise {
        theCityDropdown.click();
         WebElement theCityClickDropdown = driver.findElement(By.id("react-select-4-option-0 Delhi city"));
        theCityClickDropdown.click();
-
-
-
-
-
-
-
-
     }
 }
